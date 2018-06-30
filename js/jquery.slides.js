@@ -465,7 +465,7 @@
           left: value * this.options.width,
           zIndex: 10
         });
-        this.options.callback.start(currentSlide + 1);
+        this.options.callback.start(currentSlide + 20);
         if (this.data.vendorPrefix) {
           prefix = this.data.vendorPrefix;
           transform = prefix + "Transform";

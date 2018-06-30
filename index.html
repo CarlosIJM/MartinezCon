@@ -1,40 +1,59 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=divice-width, user-">
-        <meta name="author" content="CarlosIDJM" >
-        <meta name="description" content="sistema de contabilidad de Martinez y Astorga">
-        <meta name="keywords" content="Sistema, Contabilidad">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--para los caracteres en español-->
+    <meta charset="UTF-8">
+    
+    <!--responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--    Estilos de la pagina  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    
+    <title>Martinez & Astorga </title>
 
 
-        <title>Martinez&Astorga</title>
-        <link rel="icon" href="img/logotipo.png">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo"></h1>
+            <span class="icon-creative-commons-noderivs"></span>
+            <nav class="nav"></nav>
+        </div>
 
-    <body>
-        <header>
-            <div class="contenedor">
-                <h1>Martinez & Astorga</h1>
-                <input type="checkbox" id="menu-bar">
-                <label class="icon-menu" for="menu-bar"></label>
-                <nav class="menu">
-                    <a href="">Inicio</a>
-                    <a href="">Quines Somos</a>
-                    <a href="">Servicios</a>
-                    <a href="">Contacto</a>
-                </nav>
-            </div>
-        </header>
-        
-        <main>
-            <section id="banner">
-                <img src="img/0.jpg">
-                <h2>Contabilidad integral para el crecimiento comercial</h2>
-            </section>
-        </main>
+        <div class="main">
+                <div class="slides">
+                    <img src="img/0.jpg" alt="">
+                    <img src="img/1.jpg" alt="">
+                    <img src="img/3.png" alt="">
+                    <img src="img/4.png" alt="">
+                </div>
+        </div>
+    </header>
 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.slides.js"></script>
+    <script>
+        $(function() {
+            $(".slides").slidesjs({
+                width: 940,
+                height: 350,
 
-    </body>
+                play: {
+                    active: false,
+                    effect: "slide",
+                    interval: 3000,
+                    auto: true,
+                    swap: true,
+                    pauseOnHover: false,
+                    restartDelay: 2500
+                }
+            });
+        });
+    </script>
+</body>
 </html>
